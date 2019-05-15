@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/media/jake/boot'
+let g:netrw_dirhist_2='/home/jake/GitHub/DroneTrap/sleepy_examples/WakePeriodically'
+let g:netrw_dirhist_3='/home/jake/GitHub/DroneTrap/sleepy_examples/WakePiPeriodically'
+let g:netrw_dirhist_4='/home/jake/GitHub/DroneTrap/PiTrapWakeup'
+let g:netrw_dirhist_5='/home/jake/GitHub/DroneTrap/sleepy_examples/WakePeriodically'
