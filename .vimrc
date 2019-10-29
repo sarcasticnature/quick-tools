@@ -104,11 +104,15 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=0
 
 "let base16colorspace=256    " Access colors present in 256 colorspace
-colorscheme base16-gruvbox-light-hard
+"set t_Co=256
+set termguicolors
+colorscheme base16-gruvbox-dark-hard
 
 " show a few lines of context around the cursor
 set scrolloff=3
 
 " Show @@@ in the last line if it's truncated
 set display=truncate
+
+filetype indent plugin on
 
