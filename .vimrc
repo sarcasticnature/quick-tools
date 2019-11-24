@@ -105,8 +105,12 @@ highlight ColorColumn ctermbg=0
 
 "let base16colorspace=256    " Access colors present in 256 colorspace
 "set t_Co=256
-set termguicolors
 colorscheme base16-gruvbox-dark-hard
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 
 " show a few lines of context around the cursor
 set scrolloff=3
@@ -116,7 +120,15 @@ set display=truncate
 
 filetype indent plugin on
 
-let &t_SI = "\<Esc>[6 q"
-let &t_SR = "\<Esc>[4 q"
-let &t_EI = "\<Esc>[2 q"
+" Change cursor shape in different modes
+" Cursor settings:
+"  1 -> blinking block
+"  2 -> solid block
+"  3 -> blinking underscore
+"  4 -> solid underscore
+"  5 -> blinking vertical bar
+"  6 -> solid vertical bar
+let &t_SI = "\<Esc>[6 q"    "SI = INSERT mode
+let &t_SR = "\<Esc>[4 q"    "SR = REPLACE mode
+let &t_EI = "\<Esc>[2 q"    "EI = NORMAL mode (else)
 
