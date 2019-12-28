@@ -126,3 +126,16 @@ export EDITOR=/usr/bin/vim
 #    export PS1='\[\e[1;33m\]\u@\h:\[\033[1;34m\]\w\[\e[0m\]\$ '
 #fi
 
+source /opt/ros/melodic/setup.bash
+
+# ignore snaps when using df or lsblk
+alias df='df -h -x"squashfs"'
+alias lsblk='lsblk -e 7'
+# force tmux to assume 256 color support
+#alias tmux='tmux -2'
+
+# pyenv stuff
+#export PATH="$HOME.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+
