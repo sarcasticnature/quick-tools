@@ -116,9 +116,13 @@ endif
 set scrolloff=3
 
 " Show @@@ in the last line if it's truncated
-set display=truncate
+"set display=truncate
 
-filetype indent plugin on
+" Prevent the default ftplugin settings from loading
+"autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
+
+" Enable filetype plugin
+"filetype indent plugin on
 
 " Change cursor shape in different modes
 " Cursor settings:
@@ -131,8 +135,4 @@ filetype indent plugin on
 let &t_SI = "\<Esc>[6 q"    "SI = INSERT mode
 let &t_SR = "\<Esc>[4 q"    "SR = REPLACE mode
 let &t_EI = "\<Esc>[2 q"    "EI = NORMAL mode (else)
-
-" prevent vim from automatically inserting a comment character when hitting
-" enter at the end of a commented line
-set formatoptions-=r
 
