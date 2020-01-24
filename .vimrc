@@ -136,3 +136,6 @@ let &t_SI = "\<Esc>[6 q"    "SI = INSERT mode
 let &t_SR = "\<Esc>[4 q"    "SR = REPLACE mode
 let &t_EI = "\<Esc>[2 q"    "EI = NORMAL mode (else)
 
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
