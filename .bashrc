@@ -122,10 +122,10 @@ fi
 
 export EDITOR=/usr/bin/vim
 
-#if [[ $TERM = screen ]]; then
-#    export PS1='\[\e[1;33m\]\u@\h:\[\033[1;34m\]\w\[\e[0m\]\$ '
-#fi
+# alias df to use human readable format by default
+alias df='df -h'
 
+# set up ROS (melodic, in this case)
 #source /opt/ros/melodic/setup.bash
 
 # ignore snaps when using df or lsblk
