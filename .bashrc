@@ -120,6 +120,7 @@ fi
 
 # Extra Stuff
 
+# set vim as the default editor
 export EDITOR=/usr/bin/vim
 
 # alias df to use human readable format by default
