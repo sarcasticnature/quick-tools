@@ -56,7 +56,9 @@ set ruler
 set confirm
  
 " Use visual bell instead of beeping when doing something wrong
-set visualbell      " #possibleannoying
+"set visualbell      " #possibleannoying
+" Disable all bells
+set noerrorbells visualbell t_vb=
   
 " And reset the terminal code for the visual bell. If visualbell is set, and
 " this line is also included, vim will neither flash nor beep. If visualbell
